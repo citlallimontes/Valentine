@@ -1,0 +1,531 @@
+<html lang="en" >
+<head>
+    <!--
+        Author: Carlos Andres
+        Date:   2-8-2022
+    
+        Filename: you.html
+     -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heart Valentine !</title>
+  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet"> 
+      
+
+
+</head>
+<style>
+ body {
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:black;
+}
+section{
+height:100%;
+width:100%;
+  position:absolute ;  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(244,213,223,1) 100%, rgba(251,255,252,1) 100%, rgba(156,157,155,1) 100%, rgba(0,0,0,1) 100%);
+}
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+    
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+/*Code for Reasons*/
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #ffcc66;
+  text-shadow: 1px 1px 0 red;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+h2{
+    position:absolute ;
+    top:30%;
+    width:100%;
+	  font-family: 'Courgette', cursive;
+    font-size:4em;
+    text-align:center;
+    transform:translate ;
+    color:black;
+    transform:translateY (-50%);
+}
+
+.content-slider {
+  width: 100%;
+  height: 360px;
+}
+
+.slider {
+  height: 320px;
+  width: 680px;
+  margin: 40px auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+.mask {
+  overflow: hidden;
+  height: 320px;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  width: 680px;
+  height: 320px;
+  position: absolute;
+  top: -325px;
+  list-style: none;
+}
+
+.slider .quote {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.slider .source {
+  font-size: 20px;
+  text-align: right;
+}
+
+.slider li.anim1 {
+  animation: cycle 15s linear infinite;
+}
+
+.slider li.anim2 {
+  animation: cycle2 15s linear infinite;
+}
+
+.slider li.anim3 {
+  animation: cycle3 15s linear infinite;
+}
+
+.slider li.anim4 {
+  animation: cycle4 15s linear infinite;
+}
+
+.slider li.anim5 {
+  animation: cycle5 15s linear infinite;
+}
+    slider li.anim6 {
+  animation: cycle5 15s linear infinite;
+}
+
+.slider:hover li {
+  animation-play-state: paused;
+}
+
+@keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle4 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle5 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  76% {
+    top: -325px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+/*Code for button*/
+ .btn {
+     top: 50%;
+     left: 46%;
+    padding: 1em 2.1em 1.1em;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+    color: red;
+    background-color: #fbdedb;
+    display: inline-block;
+    background: #e74c3c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: .85em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+.btn:hover, .btn:focus {
+    opacity: 0.8;
+}
+.btn:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
+.btn.block {
+    display: block !important;
+}
+.btn.circular {
+  border-radius: 50em !important;
+}
+.black {
+    background-color: #ffcc66;
+}
+
+.footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-image: radial-gradient( circle farthest-corner at 1.3% 2.8%,  rgba(239,249,249,1) 0%, rgba(182,199,226,1) 100.2% );
+
+   color: black;
+   text-align: center;
+    font-size: 10px;
+}
+</style>
+<body>
+        
+    <section>
+			<h1> Reasons I Love You.</h1>
+    <h2>
+       <div class="content-slider">
+  <div class="slider">
+    <div class="mask">
+      <ul>
+        <li class="anim1">
+          <div class="quote">Your beautiful smile that makes me fall head over heels.</div>
+            <div class="source">- C</div>
+        </li>
+        <li class="anim2">
+          <div class="quote">The way you tend to care for me.</div>
+          <div class="source">- C</div>
+        </li>
+        <li class="anim3">
+          <div class="quote">Your enthusiasim and curiosity for life.</div>
+          <div class="source">- C</div>
+        </li>
+        <li class="anim4">
+          <div class="quote">You're actually funny and make me laugh.</div>
+          <div class="source">- C</div>
+        </li>
+        <li class="anim5">
+          <div class="quote">Your devotion and selflessness.</div>
+          <div class="source">- C</div>
+        </li>
+          <li class="anim6">
+          <div class="quote">Your devotion and selflessness.</div>
+          <div class="source">- C</div>
+        </li>
+          <li class="anim7">
+          <div class="quote">Your alluring eyes that still somehow make me nervous to stare into.</div>
+          <div class="source">- C</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+      </h2>
+  
+     <div class="leaf">
+         <div><img src="/images/snoopy.png" target="_blank" height="75px" width="75px" style=""></div>
+      <div><img src="https://pngimg.com/uploads/snoopy/snoopy_PNG50.png" height="75px" width="75px"></div>
+      <div>  <img src="https://pngimg.com/uploads/snoopy/snoopy_PNG17.png" height="75px" width="75px" ></div>
+      <div><img  src="http://pngimg.com/uploads/heart/heart_PNG686.png" height="75px" width="75px"></div>
+       <div> <img src="http://pngimg.com/uploads/rose/rose_PNG649.png" height="75px" width="75px"></div>
+     <div>   <img src="http://pngimg.com/uploads/rose/rose_PNG649.png" height="75px" width="75px"></div>
+     <div><img src="https://pngimg.com/uploads/snoopy/snoopy_PNG36.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf1">
+     <div><img src="images/snoopy.png" height="75px" width="75px"></div>
+      <div><img src="https://pngimg.com/uploads/snoopy/snoopy_PNG50.png" height="75px" width="75px"></div>
+      <div>  <img src="https://pngimg.com/uploads/snoopy/snoopy_PNG17.png" height="75px" width="75px" ></div>
+      <div><img  src="http://pngimg.com/uploads/heart/heart_PNG686.png" height="75px" width="75px"></div>
+       <div> <img src="http://pngimg.com/uploads/rose/rose_PNG649.png" height="75px" width="75px"></div>
+     <div>   <img src="http://pngimg.com/uploads/rose/rose_PNG649.png" height="75px" width="75px"></div>
+        <div><img src="https://pngimg.com/uploads/snoopy/snoopy_PNG36.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf2">
+     <div>  <img src="/images/snoopy.png" height="75px" width="75px"></div>
+      <div><img src="https://pngimg.com/uploads/snoopy/snoopy_PNG50.png" height="75px" width="75px"></div>
+      <div>  <img src="https://pngimg.com/uploads/snoopy/snoopy_PNG17.png" height="75px" width="75px" ></div>
+      <div><img  src="http://pngimg.com/uploads/heart/heart_PNG686.png" height="75px" width="75px"><></div>
+       <div> <img src="http://pngimg.com/uploads/rose/rose_PNG649.png" height="75px" width="75px"></div>
+     <div>   <img src="http://pngimg.com/uploads/rose/rose_PNG649.png" height="75px" width="75px"></div>
+     <div><img src="https://pngimg.com/uploads/snoopy/snoopy_PNG36.png" height="75px" width="75px"></div>
+            
+     </div><br><br>
+         <a href="/card.html" class="btn black circular">When Done Click</a> 
+     </section>
+
+    
+      <div class="footer">
+        <p>This is for personal use only. I do not claim any of these animations.</p></div>                                           
+                                                        
+< /body>
+< /html>
+
+                                                        
